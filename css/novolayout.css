@@ -63,6 +63,12 @@ li.band {
 float:right;
 }
 
+li.padrao {
+float: left;
+font-family: arial;
+font-size: 20px;
+text-align: left;}
+
 footer {
 background-color: #48B3F6;
 text-align: center;
