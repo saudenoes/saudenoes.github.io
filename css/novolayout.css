@@ -15,6 +15,11 @@ height: 28px;
 nav {
 font-size: 20px;
 }
+    
+    body {
+      background-image: url("https://saudenoes.github.io/imagens/final%20c%C3%B3pia.png");
+	background-color: #F2F2F2;
+    }
 
 header {
 background-color: #48B3F6;
@@ -68,9 +73,9 @@ padding: 1em;
 
 article {
 background-color: white;
-margin-left: 12%;
 margin-right: 12%;
-}
+margin-left: 12%;
+padding: 1em}
 
 li a, .dropbtn {
     display: inline-block;
