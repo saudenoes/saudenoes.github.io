@@ -68,8 +68,8 @@ padding: 1em;
 
 article {
 background-color: white;
-padding-left: 175px;
-padding-right: 175px;
+margin-left: 12%;
+margin-right: 12%;
 }
 
 li a, .dropbtn {
