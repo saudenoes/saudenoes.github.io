@@ -165,6 +165,12 @@ font-family: Arial;
 font-size: 50px;
 }
 
+p.data{
+text-align: right;
+font-family: Arial;
+color: #A4A4A4;
+font-size: 15px;}
+
 
 img.right {
 float: right;
