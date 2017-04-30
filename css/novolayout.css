@@ -66,13 +66,16 @@ float:right;
 li.padrao {
 font-family: arial;
 font-size: 20px;
-text-align: left;}
+text-align: left;
+color: black;
+}
 
 ul. padrao {
 font-family: arial;
 font-size: 20px;
 text-align: left;
-list-style-type: none;}
+list-style-type: none;
+color: black;}
 
 footer {
 background-color: #48B3F6;
