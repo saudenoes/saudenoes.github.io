@@ -68,6 +68,12 @@ font-family: arial;
 font-size: 20px;
 text-align: left;}
 
+ul. padrao {
+font-family: arial;
+font-size: 20px;
+text-align: left;
+list-style-type: none;}
+
 footer {
 background-color: #48B3F6;
 text-align: center;
