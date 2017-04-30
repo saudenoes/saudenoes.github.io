@@ -16,10 +16,10 @@ nav {
 font-size: 20px;
 }
     
-    body {
-      background-image: url("https://saudenoes.github.io/imagens/final%20c%C3%B3pia.png");
-	background-color: #F2F2F2;
-    }
+body {
+background-image: url("https://saudenoes.github.io/imagens/final%20c%C3%B3pia.png");
+background-color: #F2F2F2;
+}
 
 header {
 background-color: #48B3F6;
@@ -66,16 +66,7 @@ float:right;
 li.padrao {
 font-family: arial;
 font-size: 20px;
-text-align: left;
-color: black;
-}
-
-ul. padrao {
-font-family: arial;
-font-size: 20px;
-text-align: left;
-list-style-type: none;
-color: black;}
+text-align: left;}
 
 footer {
 background-color: #48B3F6;
@@ -214,8 +205,6 @@ text-indent:4em;
 font-family: arial;
 }
 
-dicas
-
 ul.aqui {
 margin-left: 175px;
 margin-right: 175px
@@ -227,6 +216,7 @@ font-size: 20px;
 	
 p.obj {
 font-size: 20px;
+color: black;
 }
 	
 ul.obj li {
@@ -290,3 +280,24 @@ color: #48B3F6;
 li.sel a:hover {
 color: #48B3F6;
 }
+
+img.hospital {
+width: 500px;
+height: 320px;
+float: left;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+
+div.texto {
+float= center;
+}
+
+
+ul.map {
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: white;
+color:#48B3F6; }
