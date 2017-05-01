@@ -57,7 +57,7 @@ li a {
 
 li.nav a:hover {
 background-color: #FDDCFD;
-color: #48B3F6; }
+color: white; }
 
 li.band {
 float:right;
@@ -92,7 +92,7 @@ li a, .dropbtn {
 
 li a:hover, .dropdown:hover .dropbtn {
 background-color: #FDDCFD;
-color: #48B3F6}
+color: white;}
 
 li.dropdown {
     display: inline-block;
@@ -117,7 +117,7 @@ li.dropdown {
 
 .dropdown-content a:hover {
 background-color: #FDDCFD;
-color: #48B3F6;
+color: white;
 }
 
 .dropdown:hover .dropdown-content {
