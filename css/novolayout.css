@@ -149,10 +149,11 @@ float: left;
 	
 div.img {
 float: right;
+padding-right: 40px;
 }
 	
 div.img img {
-width: 300px;
+width: 500px;
 border: 5px black solid;
 border-collapse: collapse;
 }
