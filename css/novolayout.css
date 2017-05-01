@@ -312,4 +312,37 @@ font-family: Arial;
 img.sus {
 width: 850px;
 }
+div.noticia {
+    margin: 5px;
+    border: 2px solid #ccc;
+    float: left;
+    width:500px;
+}
+
+div.noticia a{
+	text-decoration: none;
+}
+
+p.noticia{
+text-align: left;
+font-family: arial;
+font-size: 20px;
+color: black;
+padding: 5px;}
+div.noticia:hover {
+    border: 2px solid #48B3F6;
+}
+
+div.noticia img {
+    width: 200px;
+    height: 160px;
+float: left;
+padding: 2px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
 
