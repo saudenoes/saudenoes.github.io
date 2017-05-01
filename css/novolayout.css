@@ -290,14 +290,18 @@ padding-right: 10px;
 }
 
 
-div.texto {
-float= center;
-}
-
-
 ul.map {
 list-style-type: none;
 margin: 0;
 padding: 0;
 background-color: white;
 color:#48B3F6; }
+
+ul.desc1 {
+list-style-type: none;
+}
+
+p.desc1 {
+font-size: 20px;
+font-family: Arial;
+}
