@@ -253,7 +253,7 @@ ul.sel {
 list-style-type: none;
 margin: 0;
 padding: 0;
-background-color: #48B3F6;
+background-color: white;
 color:#48B3F6; }
 
 
@@ -274,7 +274,7 @@ background-color: #FDDCFD;
 }
 
 li.sel a:hover {
-color: white;
+color: #FDDCFD;
 }
 
 img.hospital {
