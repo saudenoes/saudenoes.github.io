@@ -329,6 +329,7 @@ font-family: arial;
 font-size: 20px;
 color: black;
 padding: 5px;}
+
 div.noticia:hover {
     border: 2px solid #48B3F6;
 }
@@ -345,4 +346,10 @@ div.desc {
     text-align: center;
 }
 
-
+div.noticia p {
+text-align: left;
+font-family: arial;
+font-size: 20px;
+color: black;
+padding: 5px;
+}
