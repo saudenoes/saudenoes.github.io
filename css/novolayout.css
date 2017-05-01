@@ -274,7 +274,9 @@ background-color: #FDDCFD;
 }
 
 li.sel a:hover {
-color: #FDDCFD;
+color: white;
+background-color: #FDDCFD;
+padding: 1em;
 }
 
 img.hospital {
