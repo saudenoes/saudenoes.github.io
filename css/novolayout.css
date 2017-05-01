@@ -270,12 +270,12 @@ padding: 1em;
 }
 
 li.sel:hover {
-background-color: white;
-color: #48B3F6;
+background-color: #FDDCFD;
+color: white;
 }
 
 li.sel a:hover {
-color: #48B3F6;
+color: white;
 }
 
 img.hospital {
