@@ -250,18 +250,18 @@ font-size 20px;
 }
 
 ul.sel {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+list-style-type: none;
+margin: 0;
+padding: 0;
 background-color: white;
 color:#48B3F6; }
 
 
 li.sel {
-    display: inline;
-	background-color: #48B3F6;
-	padding: 1em;
-	color: white;
+display: inline;
+background-color: #48B3F6;
+padding: 1em;
+color: white;
 }
 
 li.sel a {
@@ -271,7 +271,6 @@ padding: 1em;
 
 li.sel:hover {
 background-color: #FDDCFD;
-color: white;
 }
 
 li.sel a:hover {
