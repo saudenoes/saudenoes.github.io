@@ -14,7 +14,7 @@ height: 28px;
 
 nav {
 font-size: 20px;
-position: relative;
+position: static;
 width: 100%
 }
     
