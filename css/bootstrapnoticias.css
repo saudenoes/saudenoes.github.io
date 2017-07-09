@@ -200,7 +200,7 @@ h4 {
 .titulo-noticia {
   color: black;
   text-align: left;
-  font-weight: bold;
+  font-weight: bold!important;
 }
 
 .data-noticia {
