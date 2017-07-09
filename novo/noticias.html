@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Saúde no Espírito Santo</title>
+    <link rel="icon" href="imagens/favicon.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+html, body, .capa {
+  height: 100%;
+}
+
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    background: #ffffff;
+    background-attachment: fixed;
+  }
+
+.img-logo {
+  height: 50px;
+  width: 170px;
+  display: block;
+  background: url('logo.png') no-repeat;
+  background-size: contain;
+  color: transparent;
+  padding: 0;
+}
+
+nav.navbar-inverse {
+  padding: 15px 0px;
+  background: #3399ff;
+  border: none;
+}
+
+.navbar-brand{
+  padding: 2px 15px;
+}
+
+.divisor{
+  width: 1px;
+  height: 16px;
+  background: white;
+  margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+  transition: all 0.4s;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #ff66b3;
+  font-size: 18px;
+  transition: all 0.4s;
+}
+
+.bandeira {
+  width: 20px;
+}
+
+.capa {
+  display: table;
+  width: 100%;
+}
+
+  .carousel-control.right, .carousel-control.left {
+     background-image: none;
+     color: #ff66b3;
+     transition: all 0.4s;
+  }
+
+   .carousel-control.right:hover, .carousel-control.left:hover {
+     color: #3399ff ;
+     transition: all 0.4s;
+  }
+
+  .carousel-indicators li {
+      border-color: #ff66b3;
+  }
+
+  .carousel-indicators li.active {
+      background-color: #ff66b3;
+  }
+
+
+.bg-1{
+  padding-top: 100px;
+}
+
+.img-carousel {
+  width: 70%;
+  height: 450px;
+  border-radius: 50px;
+  transition: all 1s;
+}
+
+.img-carousel:hover {
+  width: 80%;
+  height: 500px;
+  border-radius: 20px;
+  transition: all 1s;
+}
+
+.text-carousel {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.page-header {
+  border-bottom: 1px solid grey;
+}
+
+.title {
+  border-top: 5px solid #3399ff;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  display: inline;
+  letter-spacing: -2px;
+  color: #3399ff;
+}
+
+.img-noticias {
+  width: 400px;
+  height: 300px;
+  transition: all 0.6s;
+}
+
+.img-noticias:hover {
+  padding-bottom: 20px;
+  transition: all 0.4s;
+}
+
+.contact {
+  font-size: 20px;
+}
+
+.logo {
+  padding-right: 5px;
+  color: #3399ff;
+}
+
+.redes-facebook {
+  width: 30px;
+    transition: all 0.4s;
+}
+
+.redes-twitter {
+  width: 40px;
+  padding-left: 2px;
+  transition: all 0.4s;
+}
+
+.redes-facebook:hover {
+  width: 40px;
+  transition: all 0.4s;
+}
+
+.redes-twitter:hover {
+  width: 50px;
+  transition: all 0.4s;
+}
+h4 {
+  display: inline;
+}
+
+.topo {
+  font-size: 20px;
+  color: #3399ff;
+  transition: all 0.4s;
+}
+
+.topo:hover {
+  font-size: 30px;
+  transition: all 0.4s;
+}
+
+.img-postagem {
+  width: 100%;
+  border-radius: 20px;
+  padding-right: 10px;
+}
+
+.img-postagem:hover {
+  padding-right: 10px;
+  transition: padding-right 0.4s;
+}
+
+.postagem:hover {
+ padding: 1em;
+ border-bottom: 4px solid #3399ff;
+ transition: all 0.4s;
+}
+
+.postagem {
+   transition: all 0.4s;
+   padding-bottom: 15px;
+   border-bottom: 1px solid grey;
+   padding-top: 40px;
+}
+
+.resumo-noticia {
+  text-indent: 20px;
+  text-align: left;
+  color: black;
+}
+
+.titulo-noticia {
+  color: black;
+  text-align: left;
+}
+
+.data-noticia {
+  text-align: left;
+  color: grey;
+  padding-left: 40px;
+}
+
+
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">Alternar navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">
+            <span class="img-logo">SaúdeES</span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="">HISTÓRIA</a></li>
+            <li><a href="">DICAS</a></li>
+            <li><a href="">NOTÍCIAS</a></li>
+            <li><a href="">HOSPITAIS</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TEMAS
+              <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="">DEPRESSÃO</a></li>
+                  <li><a href="">FEBRE AMARELA</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">CONTATO</a></li>
+            <li class="divisor" role="separator"></li>
+            <li><a href=""><img class="img-responsive bandeira" src="brasil.png"></a></li>
+            <li><a href=""><img class="img-responsive bandeira" src="eua.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center bg-1" id="home">
+    <div class="page-header">
+    </div>
+    <h3 class="title">NOTÍCIAS</h3>
+    <br/>
+    <br/>
+    <a href=""><div class="row postagem">
+      <div class="col-sm-3">
+         <img class="img-postagem" src="http://s2.glbimg.com/KdIDd0HZyCWqxFWZ9U1EBVFAoHw=/300x225/s.glbimg.com/jo/g1/f/original/2014/11/16/morte_adolescente_16_11_14_1.jpeg">
+      </div>
+      <div class="col-sm-9 texto">
+      <h3 class="titulo-noticia">Conselho de medicina do ES analisa negligência em morte de adolescente</h3>
+      <p class="resumo-noticia">No dia em que o adolescente que morreu após ser dispensado de uma triagem na Unidade de Pronto-Atendimento (UPA) da Serra-Sede, Grande Vitória, foi enterrado, o Conselho Regional de Medicina (CRM-ES) solicitou à Secretaria Municipal de Saúde informações sobre o atendimento prestado e garantiu que, caso fique constatada negligência, irá ingressar com uma ação civil pública contra a prefeitura.</p>
+      <p class="data-noticia">19/11/2014</p>
+    </div>
+    </div>
+      <a href=""><div class="row postagem">
+      <div class="col-sm-3">
+         <img class="img-postagem" src="http://tasabendo.com.br/wp-content/uploads/2016/05/esmola_saude_publica1.jpg">
+      </div>
+      <div class="col-sm-9">
+      <h3 class="titulo-noticia">Moradores do Espírito Santo são os que pior avaliam a saúde pública</h3>
+      <p class="resumo-noticia">Pesquisa dos conselhos regionais de Medicina foi feita nos 14 estados com piores IDH do País</p>
+      <p class="data-noticia">28/07/2014</p>
+    </div>
+    </div>
+      <a href=""><div class="row postagem">
+      <div class="col-sm-3">
+         <img class="img-postagem" src="http://s2.glbimg.com/qusuZW_uIpSKhYDXQ3O7nLglT8Q=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/18/movimento_vacina_vila_velha_18_01_17_45.jpeg">
+      </div>
+      <div class="col-sm-9">
+      <h3 class="titulo-noticia">Procura por vacina contra febre amarela lota postos no ES</h3>
+      <p class="resumo-noticia">Secretário de Saúde disse que não há motivo para pânico no estado. Sesa anunciou a chegada do primeiro lote com 350 mil doses. </p>
+      <p class="data-noticia">18/01/2017</p>
+    </div>
+    </div>
+      <a href=""><div class="row postagem">
+      <div class="col-sm-3">
+         <img class="img-postagem" src="https://img.r7.com/images/2016/10/18/29w30mn286_nbxmou0tp_file?dimensions=460x305">
+      </div>
+      <div class="col-sm-9">
+      <h3 class="titulo-noticia">Médicos registram situação caótica em seis unnidades de saúde da grande Vitória</h3>
+      <p class="resumo-noticia">Representantes das entidades médicas fizeram diversas imagens da situação das unidades de saúde visitadas.</p>
+      <p class="data-noticia">18/10/2016</p>
+    </div>
+    </div>
+      <a href=""><div class="row postagem">
+      <div class="col-sm-3">
+         <img class="img-postagem" src="http://s2.glbimg.com/li3rO-Q9MMnQB8oKn9fih0gNTeE=/300x225/s.glbimg.com/jo/g1/f/original/2017/03/03/whatsapp_image_2017-03-03_at_18.25.57.jpeg">
+      </div>
+      <div class="col-sm-9">
+      <h3 class="titulo-noticia">Crianças agredidas pela mãe no ES serão cuidadas por avós</h3>
+      <p class="resumo-noticia">Casal de gêmeos era agredido por mãe que sofria com depressão.</p>
+      <p class="resumo-noticia">Uma das crianças ficou internada por 2 meses; ele perdeu a visão e a fala.</p>
+      <p class="data-noticia">18/10/2016</p>
+    </div>
+    </div>
+      <a href=""><div class="row postagem">
+      <div class="col-sm-3">
+         <img class="img-postagem" src="http://medfamily.com.br/file/2014/11/Depressao.jpg">
+      </div>
+      <div class="col-sm-9">
+      <h3 class="titulo-noticia">Médico do ES tira dúvidas sobre depressão</h3>
+      <p class="resumo-noticia">Doutor Vicente Ramatis, psiquatra do Espírito Santo, entrevista as pessoas e fala sobre depressão.</p>
+      <p class="data-noticia">09/06/2016</p>
+    </div>
+    </div>
+      <a href=""><div class="row postagem">
+      <div class="col-sm-3">
+         <img class="img-postagem" src="http://admin.ocponline.com.br/wp-content/uploads/2014/03/pronto-atendimento-meta-e-ampliar-a-estrutura.gif">
+      </div>
+      <div class="col-sm-9">
+      <h3 class="titulo-noticia">Secretário de Saúde do ES explica situação de hospitais do estado</h3>
+      <p class="resumo-noticia">Secretário estadual de saúde, Ricardo de Oliveira, fala mais sobre os hospitais do estado.</p>
+      <p class="data-noticia">18/10/2016</p>
+    </div>
+    </div>
+       
+   <br/>
+   <br/>
+  <footer class="container-fluid text-center">
+    <a href="#home" title="Voltar ao Topo">
+    <span class="glyphicon glyphicon-chevron-up topo"></span>
+  </a>
+  <p>2017 &copy; Todos os direitos reservados</p>
+  </footer>
+  <br/>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+ <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== ""){
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+  </body>
+</html>
