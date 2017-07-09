@@ -199,7 +199,7 @@ color: #A4A4A4;
 font-size: 25px;
 }
 
-p.titl{
+p.title{
 text-align: left;
 font-family: Arial; 	
 font-size: 30px;
@@ -296,7 +296,7 @@ h4 {
   border-bottom: 1px solid white;
 }
 
-.title {
+.titl {
   border-top: 5px solid #3399ff;
   padding-top: 18px;
   padding-bottom: 20px;
@@ -305,9 +305,24 @@ h4 {
   color: #3399ff;
 }
 
-.title2 {
+.titl2 {
   border-top: 5px solid white;
   display: inline;
   letter-spacing: -2px;
   color: white !important;
+}
+
+.right {
+float: right;
+padding: 1em;
+}
+
+.left {
+float: left;
+padding: 1em;
+}
+
+.center {
+float: center;
+padding: 1em;
 }
