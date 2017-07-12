@@ -1,73 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
+<html lang="pt-br">
 <title>Saúde no ES</title>
-	<link rel="shortcut icon" href="https://saudenoes.github.io/imagens/favicon.png" type="image/x-png">
 <meta charset="utf-8">
-<link rel="stylesheet" href="https://saudenoes.github.io/css/novolayout.css"/> 
+	<link rel="shortcut icon" href="https://saudenoes.github.io/imagens/favicon.png" type="image/x-png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="https://saudenoes.github.io/css/bootstrap.css"/>
 </head>
+<style>
+ul.map {
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: white;
+color:#48B3F6; 
+float: left;
+}
 
+p.obj {
+font-size: 20px;
+color: black;
+}
+	
+ul.obj li {
+font-size: 20px;
+}
+a.sm {
+text-decoration: none;
+}
 
+.dropbtn {
+    display: inline-block;
+    color: #FDDCFD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+color: #FDDCFD;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+color: #FDDCFD;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hospital {
+width: 100%;
+height: 100%;
+float: left;
+padding-left: 10px;
+padding-right: 10px;
+}
+</style>
 <body>
-<header><a href="https://saudenoes.github.io/ingles/index.html"><img src="https://saudenoes.github.io/imagens/header2.png" width='800' height='200'></a>
-<div class="casa">
-<a href="https://saudenoes.github.io/ingles/index.html"><img class="casa" src="http://www.cadastri.com.br/static/images/icons/icone-casa-e-decoracao-w.png"></a> 
-  </header>
-<nav>
-<ul class="nav">
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">AUDIO VISUAL</a>
-    <div class="dropdown-content">
-      <a href="https://saudenoes.github.io/ingles/trabalho.html">THE WORK</a>
-      <a href="https://saudenoes.github.io/ingles/apresentacao.html">APRESENTATION</a>
-    </div>
-  </li>
-<li class="nav"><a href="https://saudenoes.github.io/ingles/historia.html">HISTORY</a></li>
- <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">CONTENT</a>
-    <div class="dropdown-content">
-      <a href="https://saudenoes.github.io/ingles/noticias.html">NEWS</a>
-      <a href="https://saudenoes.github.io/ingles/hospitais.html">HOSPITALS</a>
-	  </div>
-  </li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">THEMES</a>
-    <div class="dropdown-content">
-      <a href="https://saudenoes.github.io/ingles/depression.html">DEPRESSION</a>
-      <a href="https://saudenoes.github.io/ingles/febreamarela.html">YELLOW FEVER</a>
-	  </li>
-  
-  
-  
-      
+ <nav class="navbar navbar-default navbar-fixed-top">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+     </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav navbar-left">
+         <li><a href="https://saudenoes.github.io/ingles/historia.html"><b>HISTORY</b></a></li>
+        <li><a href="https://saudenoes.github.io/ingles/dicas.html"><b>TIPS</b></a></li>
+        <li><a href="https://saudenoes.github.io/ingles/hospitais.html"><b>HOSPITALS</b></a></li>
+         <li><a href="https://saudenoes.github.io/ingles/audiovisual.html"><b>AUDIOVISUAL</b></a></li>
+         <li><a href="https://saudenoes.github.io/ingles/noticias.html"><b>NEWS</b></a></li>
+         <li><a href="https://saudenoes.github.io/ingles/temas.html"><b>THEMES</b></a></li>
+         </ul>
+		 <ul class="navbar-nav navbar-right band1">
+         <li><a href="https://saudenoes.github.io/portugues/hospitais.html"><img class="img-responsive band1" src="https://saudenoes.github.io/imagens/br.png"></a></li>
+        <li><a  href="https://saudenoes.github.io/ingles/hospitais.html"><img class="img-responsive band2" src="https://saudenoes.github.io/imagens/Flag_of_the_United_States.svg.png"></a></li>
+         </ul>
+	 </div>
+	 </div>
+   
+ </nav>
 
-  
- <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">GROUP</a>
-    <div class="dropdown-content">
-    <a href="https://matheuskuster.github.io/" target="_blank">MATHEUS</a>
-      <a href="https://joaoantoniosc.github.io" target="_blank">JOÃO ANTONIO</a>
-	  <a href="https://sibelysmiderle.github.io/" target="_blank">SIBELY</a>
-	  <a href="https://ingridylima2.github.io/pagina/index.html" target="_blank">INGRIDY</a>
-	  <a href="https://dudabraga.github.io" target="_blank">MARIA EDUARDA</a>
-	  <a href="https://siqueiraifes.github.io/pagina/index.html" target="_blank">ISAQUE</a>
-    </div>
-  </li>
-  
-  
-<li class="nav"><a href="https://saudenoes.github.io/ingles/dicas.html">TIPS</a></li>
-<li class="nav"><a href="https://saudenoes.github.io/ingles/contato.html">CONTACT</a></li>
-<li class="band"><a href="https://saudenoes.github.io/portugues/hospitais.html"><img class="band1" src="http://www.gabinetecivil.al.gov.br/configuracoes/imagem/alagoas/Bandeira%20do%20Brasil.gif/image_preview"></a></li>
-<li class="band"><a href="https://saudenoes.github.io/ingles/hospitais.html"><img class="band2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png"></a></li>
-</ul>
-</nav>
-<article>
+ <div class="Jumbotron container-fluid text-center jub">
+<a href="https://saudenoes.github.io/index">
+ <center><img class="img-responsive" src="https://saudenoes.github.io/imagens/header2.png" alt="saudenoes" width="800" height="200"></center><a></a>
+ </div>
+<div class="container" id="home">
+<div class="row">
+ <div class="col-sm-12">
+ <br/>
 <br/>
-<p class="title">HOSPITALS</p>
-<div class="imagemhosp">
-<img class="hospital" src="http://www.vilavelhahospital.com.br/2014/pags/img/slide-fb.jpg">
+ <p class="inicio"><b>HOSPITALS</b></p>
+<br/>
 </div>
+</div>
+<div class="row">
+ <div class="col-sm-6">
+<div class="imagemhosp">
+<img class="hospital img-responsive" src="http://www.vilavelhahospital.com.br/2014/pags/img/slide-fb.jpg">
+</div>
+</div>
+ <div class="col-sm-6">
 <div class="texto">
 <h2>Vila Velha Hospital</h2>
 <p class="obj"><b>Address: </b>St. Moema, Square 41, Divino Espírito Santo neighborhood, Vila Velha/ES.</p>
@@ -83,11 +148,17 @@
 	  </div>
 </div>
 </div>
+</br>
+<div class="row">
+ <div class="col-sm-6">
 <div class="imagemhosp">
-<img class="hospital" src="http://s2.glbimg.com/R7LXgwaC6At5QGyndBkANL2qNQM=/620x465/s.glbimg.com/jo/g1/f/original/2012/11/05/captura_de_tela_2012-11-05_as_16.jpg">
+<img class="hospital img-responsive" src="http://s2.glbimg.com/R7LXgwaC6At5QGyndBkANL2qNQM=/620x465/s.glbimg.com/jo/g1/f/original/2012/11/05/captura_de_tela_2012-11-05_as_16.jpg">
 </div>
+</div>
+ <div class="col-sm-6">
 <div class="texto">
-<h2>Hospital São Lucas</h2>
+<div class="texto">
+<h2>São Lucas Hospital</h2>
 <p class="obj"><b>Address: </b>Ave. Jair Etiene Dessaunne, 230, Monte Belo Island neighborhood.</p>
 <p class="obj"><b>CEP: </b> 29053-325 </p>
 <p class="obj"><b>Phone: </b>(27) 3198-7423</p>
@@ -99,9 +170,17 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14966.51633651333!2d-40.32622282060993!3d-20.315614482222355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d7e7d41e3fb%3A0x96f13c5a6230e7d3!2sHospital+S%C3%A3o+Lucas+-+HSL!5e0!3m2!1spt-BR!2sbr!4v1493596246388" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </ul></center>
 	  </div>
+</div>
+</div>
+</div>
+</br>
+<div class="row">
+ <div class="col-sm-6">
 	  <div class="imagemhosp">
 <img class="hospital" src="http://midias.folhavitoria.com.br/files/2015/03/103916755-dorio.jpg">
 </div>
+</div>
+ <div class="col-sm-6">
 <div class="texto">
 <h2>Hospital Dório Silva</h2>
 <p class="obj"><b>Address: </b>Ave. Euder Scherez de Souza, w/n - Laranjeiras neighborhood, Serra-ES.</p>
@@ -116,11 +195,19 @@
 </ul></center>
 	  </div>
 </div>
-	  <div class="imagemhosp">
+</div>
+</div>
+<div class="container">
+<div class="row">
+ <div class="col-sm-6">
+  </br>
+  <div class="imagemhosp">
 <img class="hospital" src="http://www.santarita.org.br/fotos/images/Portaria%20Principal%202.jpg">
 </div>
+</div>
+ <div class="col-sm-6">
 <div class="texto">
-<h2>Hospital Santa Rita</h2>
+<h2>Santa Rita Hospital</h2>
 <p class="obj"><b>Address: </b> Ave. Mal. Campos, 1579 - Santa Cecilia neighborhood, Vitória - ES.</p>
 <p class="obj"><b>CEP: </b> 29041-295</p>
 <p class="obj"><b>Phone: </b>(27) 3334-8000</p>
@@ -132,9 +219,18 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.0639131088965!2d-40.3196846850795!3d-20.29762148639895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d6473b9ad43%3A0x9ccff69bd203ec0b!2sHospital+santa+Rita!5e0!3m2!1spt-BR!2sbr!4v1493597041037" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </ul></center>
 	  </div>
+	  </div>
+</div>
+	  </div>
+<div class="container">
+</br>
+<div class="row">
+ <div class="col-sm-6">
 	  <div class="imagemhosp">
 <img class="hospital" src="http://www.folhavitoria.com.br/geral/blogs/empregoseconcursos/wp-content/uploads/2015/07/HHHH.jpg">
 </div>
+</div>
+ <div class="col-sm-6">
 <div class="texto">
 <h2>Santa Casa de Misericórdia de Vitória</h2>
 <p class="obj"><b>Address: </b> St. Dr. João dos Santos Neves, 143 - Vila Rubim neighborhood, Vitória - ES.</p>
@@ -149,34 +245,81 @@
 </ul></center>
 	  </div>
 </div>
+<div class="container">
+<div class="row">
+ <div class="col-sm-12">
+<p class="just">See the list of hospitals <a href="https://saudenoes.github.io/documentos/HOSPITAIS.pdf">here!</a></p>
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+ <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== ""){
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<footer class="container-fluid bg-4 text-center">
+  <p> <div class="container-fluid" id="contato">
+<div class="page-header2">
 </div>
-</div>
-<br/>
-<p class="just">See the list of hospitals <a href="https://saudenoes.github.io/documentos/HOSPITAIS.pdf">here!</a></p>	
+<h3 class="titl2"><b>SAÚDE NO ES</b></h3>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+ <div class="row">
+    <div class="col-sm-5">
+      <p class="contact"><span class="glyphicon glyphicon-map-marker logo"></span>IFES- Campus Serra</p>
+      <p class="contact"><span class="glyphicon glyphicon-envelope logo"></span> saudees@gmail.com</p>
+      <p class="contact"><span class="glyphicon glyphicon-phone logo"></span> Soon</p>
+      <br/>
+    </div>
+    <div class="col-sm-7">
+    <a style="color: white" target="_blank" href="https://matheuskuster.github.io/" data-toggle="tooltip" title="Click to know more about me"><h4>Matheus Kuster</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://sibelysmiderle.github.io/novo" data-toggle="tooltip"  title="Click to know more about me"><h4>Sibely Alves</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://joaoantoniosc.github.io/" data-toggle="tooltip" title="Click to know more about me"><h4>João Antônio Sobrinho</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://dudabraga.github.io/" data-toggle="tooltip"  title="Click to know more about me"><h4>Maria Eduarda Braga</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://siqueiraifes.github.io/bootstrap" data-toggle="tooltip" title="Click to know more about me"><h4>Isaque Siqueira</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://ingridylima2.github.io/pagina/index.html" data-toggle="tooltip"  title="Click to know more about me"><h4>Ingridy Lima</h4></a>
+    </div>    
+      </div>
+    </div>
+    <br/>
+  <footer class="container-fluid text-center">
+    <a href="#home" title="Voltar ao Topo">
+    <span class="glyphicon glyphicon-chevron-up topo"></span>
+  </a>
+  <p>2017 &copy; All rights reserved</p>
+  </footer>
 
 
-
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>Copyright © João Antônio, Matheus, Maria Eduarda, Ingridy, Isaque, Sibely</footer>
 
 </body>
 </html>
