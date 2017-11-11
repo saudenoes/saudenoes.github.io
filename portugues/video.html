@@ -1,1 +1,170 @@
-a
+
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="pt-br">
+<title>Saúde no ES</title>
+<meta charset="utf-8">
+<meta name="theme-color" content="#000000">
+<link rel="shortcut icon" href="https://saudenoes.github.io/imagens/favicon.png" type="image/x-png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+</head>
+<style>
+
+@font-face {
+
+      font-family: retro;
+      src: url("https://saudenoes.github.io/SEASRN__.ttf");
+
+      }
+* {
+	margin: 0;
+	padding:0;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+#fundo-externo {
+	overflow: hidden; 	
+	width: 100%;
+	height: 100%;
+	position: absolute; 
+}
+
+#fundo {
+	position: fixed; 	
+	width: 100%;
+	height: 100%;
+}
+
+#fundo img {
+	width: 100%; 	
+	position: absolute;
+}
+
+#site {
+	text-align: center;
+
+}
+.videop{
+	float: center!important;
+	position: fixed;
+
+}
+
+.spacer{
+	margin-top: 8%;
+
+}
+p {
+	margin-bottom: 1.5em;
+}
+
+p{
+	font-family: 'retro';
+	font-size: 30px;
+	text-align: center!important;
+	color: white;
+    bottom: 0!important;
+    margin-bottom: 0;
+    position: fixed;
+}
+
+p:hover{
+    text-shadow: 1px 1px 0.05em #ffffff
+}
+
+a{
+	text-decoration: none!important;
+	color: white;
+}
+a:hover{
+	text-decoration: none!important;
+	color: white;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script>
+function adaptImage(targetimg) {
+	var wheight = $(window).height(); 
+	var wwidth = $(window).width(); 
+	
+
+    targetimg.removeAttr("width")
+    		 .removeAttr("height")
+    		 .css({ width: "", height: "" }); 
+	
+    var imgwidth = targetimg.width();
+    var imgheight = targetimg.height(); 
+	
+    var destwidth = wwidth; 
+    var destheight = wheight; 
+	if(imgheight < wheight) {
+		destwidth = (imgwidth * wheight)/imgheight;
+		
+		$('#fundo img').height(destheight);
+		$('#fundo img').width(destwidth);
+	}
+	
+	destheight = $('#fundo img').height();
+	var posy = (destheight/2 - wheight/2);
+	var posx = (destwidth/2 - wwidth/2);
+	if(posy > 0) {
+		posy *= -1;
+	}
+	if(posx > 0) {
+		posx *= -1;
+	}
+	
+	$('#fundo').css({'top': posy + 'px', 'left': posx + 'px'});
+}
+
+$(window).resize(function() {
+	adaptImage($('#fundo img'));
+});
+
+$(window).load(function() {
+	$(window).resize();
+});</script>
+</head>
+<body>
+
+<div id="fundo-externo">
+	<div id="fundo">
+		<img src="https://saudenoes.github.io/imagens/fundocinema.jpg" alt="" />
+	</div>
+</div>
+		<div id="site">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="spacer"></div>
+	<center><div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://drive.google.com/file/d/0B9Syv_edzK5CVG9Qb3pLdVJSemM/preview?autoplay=1" width="640" height="360" frameborder="0" allowfullscreen="true">
+   	</iframe></center>
+	</div>
+	<div class="col-md-2"></div>
+	</div>
+	</div>
+	<footer>
+	<div class="container">
+	<div class="row">
+
+		<div class="col-xs-12">
+			<center><p><a href="https://saudenoes.github.io/portugues/trailer.html">Assista ao Trailler</a></p></center>
+	</div>
+	</div>
+	</div>
+</footer>
+</body>
+</html>
