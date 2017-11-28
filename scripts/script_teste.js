@@ -28,6 +28,13 @@ $(document).ready( function(){
                       'Escolhe passar mais tempo na Internet em detrimento de sair com outras pessoas?',
                       'Se sente deprimido (a), instável ou nervoso (a) quando não está  na Internet e isso desaparece quando volta a estar ligado?'];   	
 
+    var linksMemes = ['https://humorpolitico.com.br/wp-content/uploads/2012/10/bom-dia-viciados-em-celular-sponholz-humor-politico.jpg',
+                      'http://gabrielabez.com.br/wp-content/uploads/2015/10/celualar.jpg',
+                      'https://img.ibxk.com.br/2015/12/29/29162528499576.jpg?w=1040',
+                      'https://i.pinimg.com/736x/17/ce/cf/17cecf43e7504102626b91d7651f55cd--comic-book-what-artist.jpg',
+                      'http://mentirinhas.com.br/wp-content/uploads/2014/10/mentirinhas_702b.jpg',
+                      'http://gabrielabez.com.br/wp-content/uploads/2015/10/cel32.png'];
+
     $('.opcao').click( function(){
     	clicouOpcao = true;
     	valorResposta = $(this).val();
@@ -79,9 +86,19 @@ $(document).ready( function(){
     			}
     		}
     	}
+
+      var meme = linksMemes[getRandomIntInclusive(0, 5)];
+
     	$('.frase').html(frase);
+      $('.meme').attr('src', meme);
     	$('#questions').hide();
     	$('#resultado').show();
+    }
+
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     function respostaArray(){
