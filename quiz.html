@@ -9,11 +9,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script> 
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
 <link rel="stylesheet" href="https://saudenoes.github.io/css/bootstrap.css"/>
+<script type="text/javascript">
+  
+  $(document).ready( function(){
+
+    
+
+    
+
+  })
+
+</script>
 </head>
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
@@ -53,11 +65,18 @@ p.texto {
 	letter-spacing: 0.14vw;
 }
 
-p.pergunta {
+.pergunta {
   margin-bottom: 1.5em;
-  text-indent: 4em;
   font-size: 20px;
   color: white;
+  text-align: justify;
+  letter-spacing: 0.14vw;
+}
+
+.num_pergunta {
+  margin-bottom: 1.5em;
+  font-size: 20px;
+  color: #00A31B;
   text-align: justify;
   letter-spacing: 0.14vw;
 }
@@ -179,71 +198,51 @@ label {
     </br>
     </br>
   <center><h1>TECNOVÍCIOS</h1></center>
-  <p class="pergunta">Está ligado à Internet mais tempo do que pretendia?</p>
-  
-  <form>
+
+    <div id="questions">
+      
+      <p><span class="num_pergunta"></span><span class="pergunta"></span></p>
    
-    <div class="radio">
-      <label><input type="radio" name="optradio">Não se aplica</label>
+      <div class="radio">
+        <label><input class="opcao" type="radio" name="optradio" value="0">Não se aplica</label>
+      </div>
+     
+      <div class="radio">
+        <label><input class="opcao" type="radio" name="optradio" value="1">Raramente</label>
+      </div>
+      
+      <div class="radio">
+        <label><input class="opcao" type="radio" name="optradio" value="2">Ocasionalmente</label>
+      </div>
+      
+      <div class="radio">
+        <label><input class="opcao" type="radio" name="optradio" value="3">Frequentemente</label>
+      </div>
+      
+      <div class="radio">
+        <label><input class="opcao" type="radio" name="optradio" value="4">Quase sempre</label>
+      </div>
+      
+      <div class="radio">
+        <label><input class="opcao" type="radio" name="optradio" value="5">Sempre</label>
+      </div>
+      </br>
+      <button type="button" id="btn-ant" class="btn btn-danger stlant">ANTERIOR</button>
+      <button type="button" id="btn-prox" class="btn btn-success stlprox">PRÓXIMA</button>
     </div>
-   
-    <div class="radio">
-      <label><input type="radio" name="optradio">Raramente</label>
+
+    <div id="resultado" style="display: none;">
+      <p style="text-align: center; font-size: 32px; color: white;">RESULTADO</p>
+      <p style="font-size: 24px;">SUA PONTUAÇÃO: <span class="sua_pontuacao" style="color: #00A31B"></span></p>
+      <br/>
+      <p class="frase" style="font-size: 23px;"></p>
     </div>
-    
-    <div class="radio">
-      <label><input type="radio" name="optradio">Ocasionalmente</label>
-    </div>
-    
-    <div class="radio">
-      <label><input type="radio" name="optradio">Frequentemente</label>
-    </div>
-    
-    <div class="radio">
-      <label><input type="radio" name="optradio">Quase sempre</label>
-    </div>
-    
-    <div class="radio">
-      <label><input type="radio" name="optradio">Sempre</label>
-    </div>
+
+
     </br>
-
-<button type="button" class="btn btn-danger stlant">ANTERIOR</button>
-<button type="button" class="btn btn-success stlprox">PRÓXIMA</button>
-    </br>
 </div>
 </div>
 </div>
-     <script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
- <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#home']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== ""){
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
 <footer class="container-fluid bg-4 text-center" style="background-color: black;">
   <p> <div class="container-fluid" id="contato">
 <div class="page-header2" style="background-color: #00A31B; color: #00A31B; border-bottom: 1px solid #00A31B">
