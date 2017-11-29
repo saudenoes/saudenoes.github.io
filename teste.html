@@ -4,8 +4,7 @@
 <html lang="pt-br">
 <title>Saúde no ES</title>
   <meta name="theme-color" content="#000000">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="msapplication-navbutton-color" content="#000000">
 <meta charset="utf-8">
   <link rel="shortcut icon" href="https://saudenoes.github.io/imagens/favicon.png" type="image/x-png">
@@ -73,6 +72,18 @@ h1{
 
 }
 
+.grad {
+  background: -webkit-linear-gradient(#eee, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5em;
+    text-indent: 4em;
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    letter-spacing: 0.14vw;
+}
+
 .stl{
 background-color: #00A31B;
 margin: 10px;
@@ -90,9 +101,52 @@ margin: 10px;
 font-family: 'Orbitron', sans-serif;
 }
 
+.btnplus{
+background-color: #000000!important;
+margin: 10px;
+float: center;
+box-shadow:  0 0px 20px green!important;
+text-shadow: 0 0px 20px green!important;
+height: 30px;
+font-size: 18px;
+font-family: 'Orbitron', sans-serif;  
+text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+.content {
+  width:680px;
+}
+}
+
+@media only screen and (max-width: 690px) {
+  .content {
+  width:580px;
+}
+}
+
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script>
+  function exibe(id) {  
+   if(document.getElementById(id).style.display=="none") {  
+        document.getElementById(id).style.display = "inline";  
+    }    
+    else {  
+        document.getElementById(id).style.display = "none";  
+    }     
+}
+
+    function esconder(id) {  
+   if(document.getElementById(id).style.display=="inline") {  
+        document.getElementById(id).style.display = "none";  
+    }    
+    else {  
+        document.getElementById(id).style.display = "inline";  
+    }     
+}
+
+
 </script>
 </head>
 <body>
@@ -149,15 +203,27 @@ Facebook, Instagram, Snapchat, WhatsApp, RPG, Candy Crush, Ask.fm, Secret… As 
 <p class="texto">
 O Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM), considerado a bíblia da psiquiatria, inclui a dependência em jogos eletrônicos na sessão III, indicando que ainda são necessários mais estudos a respeito. Já a fixação em redes sociais e mensagens instantâneas é um fenômeno tão novo que ainda não entra na classificação – oficialmente, o termo usado para diagnóstico é uso problemático das tecnologias.
   </p>
+
+<div id="esconder" style="display:inline">
+<div class="grad">
+<p class="texto">
+
+Apesar de serem distúrbios recentes, os especialistas alertam que é preciso cada vez mais prestar atenção a eles. “O ambiente do século 21 não tem precedentes. A gente não pode demonizar a tecnologia, a gente vai ter de aprender a lidar com ela”, diz o psiquiatra Gabriel Bronstein, chefe do Setor de Dependência Química e Outros Transtornos do Impulso da Santa Casa da Misericórdia do Rio de Janeiro.
+  </p>
+</div>
+   <center>
+<button type="button" class="btn btn-success btnplus" id="escolha" onclick="exibe('experiencia'); esconder('esconder')">LER MAIS</button></center>
+</div>
+  <div id="experiencia" style="display:none">
 <p class="texto">
 
 Apesar de serem distúrbios recentes, os especialistas alertam que é preciso cada vez mais prestar atenção a eles. “O ambiente do século 21 não tem precedentes. A gente não pode demonizar a tecnologia, a gente vai ter de aprender a lidar com ela”, diz o psiquiatra Gabriel Bronstein, chefe do Setor de Dependência Química e Outros Transtornos do Impulso da Santa Casa da Misericórdia do Rio de Janeiro.
   </p>
 <p class="texto">
 Para o psiquiatra da infância e adolescência Daniel Spritzer, fundador e coordenador do Grupo de Estudos sobre Adições Tecnológicas (Geat), a dependência precisa ser estudada e tratada de acordo com cada subtipo. “Será que usar a rede social é igual a ficar vendo vídeo no YouTube ou jogando o dia inteiro? Acho que é bem diferente”, observa. Ainda assim, no cotidiano dos consultórios, os especialistas que tratam dos diversos vícios virtuais – jogos, redes sociais, smartphones e pornografia on-line – destacam características comuns às adições tecnológicas e que também estão presentes nos pacientes de dependência química, como prejuízos sociais e à saúde, queda no rendimento, dificuldade de parar, fissuras, recaídas e comorbidades (doenças que se manifestam paralelamente ao quadro), entre outras.
-  </p>
-<p class="texto">
+ </p>
 
+<p class="texto">
 <b>Saudável X prejudicial </b>
   </p>
 <p class="texto">
@@ -267,10 +333,70 @@ maneira saudável, segundo especialistas da UFRJ
 
 <b>Fonte:</b> Grupo Delete
   </p>
-
   </p>
+  <center><button type="button" class="btn btn-success btnplus" id="escolha" onclick="exibe('experiencia'); esconder('esconder')">ESCONDER</button></center>
 </div>
 </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<center><h1>Vídeos</h1></center>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/gGYD7f6ImAw" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/BPiF9Nf0e9Q" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+</div>
+<div id="botao" style="display:inline">
+   <center>
+<button type="button" class="btn btn-success btnplus" id="escolha" onclick="exibe('videos'); esconder('botao')">MAIS</button></center>
+</div>
+  <div id="videos" style="display:none">
+<div class="spacer"></div>
+<div class="row">
+<div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/asrY8sj8G9k" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+<div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/hI_M_Dw5Qak" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="row">
+<div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/hDXZfspdLw8" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+<div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/Rx_7xv1ah7g" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+</div>
+<center><button type="button" class="btn btn-success btnplus" id="escolha" onclick="exibe('videos'); esconder('botao')">MENOS</button></center>
+</div>
+</div>
+
 <center><h1> Você é viciado em internet?</h1></center>
 </br>
 <p class="texto">Você é viciado em internet? Faça o teste e veja seu nível de dependência
