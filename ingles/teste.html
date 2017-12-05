@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="pt-br">
+<title>Saúde no ES</title>
+  <meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="msapplication-navbutton-color" content="#000000">
+<meta charset="utf-8">
+  <link rel="shortcut icon" href="https://saudenoes.github.io/imagens/favicon.png" type="image/x-png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+<link rel="stylesheet" href="https://saudenoes.github.io/css/bootstrap.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding:0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+body {
+  background: url(https://media.giphy.com/media/WoD6JZnwap6s8/giphy.gif) center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  background: black;
+  height: 100%
+  margin-bottom: 0;
+}
+
+p.texto {
+  margin-bottom: 1.5em;
+  text-indent: 4em;
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+  letter-spacing: 0.14vw;
+}
+
+h1{
+  font-size: 40px;
+  color: #00A31B;
+}
+.spacer{
+  padding: 3%;
+
+}
+.ilustrador{
+  background: url("https://cdn.corecanvas.com/enthusiastinc-f39dd660/media/original/576986884aac10_intro-branding-post.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    opacity: 0.8;
+
+}
+
+.grad {
+  background: -webkit-linear-gradient(#eee, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5em;
+    text-indent: 4em;
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    letter-spacing: 0.14vw;
+}
+
+.stl{
+background-color: #00A31B;
+margin: 10px;
+float: center;
+box-shadow:  0 1px 20px green!important;
+text-shadow: 0 1px 20px green!important;
+height: 80px;
+font-size: 40px;
+font-family: 'Orbitron', sans-serif;
+}
+
+.stl:hover{
+background-color: #00A31B;
+margin: 10px;
+font-family: 'Orbitron', sans-serif;
+}
+
+.btnplus{
+background-color: #000000!important;
+margin: 10px;
+float: center;
+box-shadow:  0 0px 20px green!important;
+text-shadow: 0 0px 20px green!important;
+height: 30px;
+font-size: 18px;
+font-family: 'Orbitron', sans-serif;  
+text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+.content {
+  width:680px;
+}
+}
+
+@media only screen and (max-width: 690px) {
+  .content {
+  width:580px;
+}
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script>
+  function exibe(id) {  
+   if(document.getElementById(id).style.display=="none") {  
+        document.getElementById(id).style.display = "inline";  
+    }    
+    else {  
+        document.getElementById(id).style.display = "none";  
+    }     
+}
+
+    function esconder(id) {  
+   if(document.getElementById(id).style.display=="inline") {  
+        document.getElementById(id).style.display = "none";  
+    }    
+    else {  
+        document.getElementById(id).style.display = "inline";  
+    }     
+}
+
+
+</script>
+</head>
+<body>
+  <div id="home"></div>
+ <nav class="navbar navbar-default navbar-fixed-top" style="background-color: black">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+     </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav navbar-left">
+         <li><a href="https://saudenoes.github.io/portugues/historia.html"><b>HISTÓRIA</b></a></li>
+        <li><a href="https://saudenoes.github.io/portugues/dicas.html"><b>DICAS</b></a></li>
+        <li><a href="https://saudenoes.github.io/portugues/hospitais.html"><b>HOSPITAIS</b></a></li>
+         <li><a href="https://saudenoes.github.io/portugues/audiovisual.html"><b>AUDIOVISUAL</b></a></li>
+         <li><a href="https://saudenoes.github.io/portugues/noticias.html"><b>NOTÍCIAS</b></a></li>
+         <li><a href="https://saudenoes.github.io/portugues/temas.html"><b>TEMAS</b></a></li>
+         </ul>
+     <ul class="navbar-nav navbar-right band1">
+         <li><a href="https://saudenoes.github.io/teste.html"><img class="img-responsive band1" src="https://saudenoes.github.io/imagens/br.png"></a></li>
+        <li><a  href="https://saudenoes.github.io/ingles/index.html"><img class="img-responsive band2" src="https://saudenoes.github.io/imagens/Flag_of_the_United_States.svg.png"></a></li>
+         </ul>
+   </div>
+   </div>
+   
+ </nav>
+
+ <div class="Jumbotron container-fluid text-center jub" style="background-color: black">
+<a href="https://saudenoes.github.io/index">
+ <center><img class="img-responsive" src="https://saudenoes.github.io/imagens/header2.png" alt="saudenoes" width="800" height="200"></center><a></a>
+ </div>
+<div id="site">
+<div class="container">
+</br>
+</br>
+  <center><h1>TECH ADDICTION</h1></center>
+
+</br>
+</br>
+<div class="row">
+<div class="col-md-12 ilustrador">
+</div>
+
+  <div class="col-md-12">
+    <div class="spacer"></div>
+<p class="texto">
+
+Facebook, Instagram, Snapchat, WhatsApp, RPG, Candy Crush, Ask.fm, Secret ... As virtual attempts are diverse and arise at a difficult speed to follow. While most people make moderate use to communicate or entertain, many fall into the plot online and are unable to disconnect. Technological addiction is a serious problem, dependent chemical specialties, experts warn. According to psychiatrists and psychologists who debated the theme without the annual congress of the Brazilian Association of Psychiatry in Brasilia, an aggravating fact is that, unlike alcohol and drugs, this is still an unknown field.
+  </p>
+<p class="texto">
+The Diagnostic and Statistical Manual of Mental Disorders (DSM), considered the bible of psychiatry, includes dependence on electronic games in session III, indicating that further study is needed. Fixing in social networks and instant messaging is such a new phenomenon that it has not yet entered the classification - officially, the term used for diagnosis is problematic use of technologies.
+  </p>
+
+<div id="esconder" style="display:inline">
+<div class="grad">
+<p class="texto">
+
+Although they are recent disorders, experts warn that it is increasingly necessary to pay attention to them. "The 21st century environment is unprecedented. We can not demonize the technology, we'll have to learn to deal with it, "says psychiatrist Gabriel Bronstein, head of the Chemical Dependency and Other Disorders of Impulsion Sector of the Santa Casa da Misericórdia in Rio de Janeiro.
+  </p>
+</div>
+   <center>
+<button type="button" class="btn btn-success btnplus" id="escolha" onclick="exibe('experiencia'); esconder('esconder')">READ MORE</button></center>
+</div>
+  <div id="experiencia" style="display:none">
+<p class="texto">
+
+Although they are recent disorders, experts warn that it is increasingly necessary to pay attention to them. "The 21st century environment is unprecedented. We can not demonize the technology, we'll have to learn to deal with it, "says psychiatrist Gabriel Bronstein, head of the Chemical Dependency and Other Disorders of Impulsion Sector of the Santa Casa da Misericórdia in Rio de Janeiro.
+  </p>
+<p class="texto">
+According to Daniel Spritzer, founder and coordinator of the Study Group on Technological Additions (Geat), dependency needs to be studied and treated according to each subtype. "Is using social networking the same as watching video on YouTube or playing all day? I think it's very different, "he observes. Still, in the day-to-day practice room, specialists dealing with various virtual addictions - games, social networks, smartphones and online pornography - highlight features common to technological additions that are also present in patients with chemical dependency, such as social and to health, to fall in yield, difficulty to stop, fissures, relapses and comorbidities (diseases that appear parallel to the picture), among others.
+ </p>
+
+<p class="texto">
+<b>Healthy X Harmful </b>
+  </p>
+<p class="texto">
+
+"You can not think of treatment without considering comorbidities," says psychologist Veruska Santos, a therapist at the group Delete, a kind of "technological detoxification center" created by the Federal University of Rio de Janeiro. There, addicts are first evaluated by psychiatrists to identify which problems are behind the addiction. The most common, according to Santos, are depression, anxiety, panic and obsessive-compulsive disorder. Often, Dr. Daniel Spritzer notes, patients come to their offices with some of these problems, and during the evaluation, specialists find that they also suffer from dependence on some type of technology.
+  </p>
+<p class="texto">
+
+The psychiatrist explains that the addition comes with some features that differentiate the normal use of the harmful. Mood modification, time spent thinking or addiction, increasing tolerance, internal and social conflicts and relapses are some of them. Time, he notes, is an important but not a determinant marker. "Hardly anyone with a dependency will play only two hours a day, but not everyone who plays a lot will have a loss. Time is relative, just an indicator of the problem, "he says. "To diagnose, it is not enough to know how much you use, but how you use it," agrees psychologist Aline Restano, a Geat researcher.
+  </p>
+<p class="texto">
+
+For example, a user can spend many hours on social networks without being shaken by the fact that his photo has received few tanned. This is not the case with dependents. Aline Restano says that in the case of addition, even the WhatsApp message notification sound brings pleasure to patients who, on the other hand, suffer when the handset sounds less than they expected. A pleasure that, in reality, is deeply associated with anguish. A 17-year-old girl, a psychologist's patient, reported that she had been away for a week from her mother's cell phone. At first he was angry. But in the end she felt free. "What a relief," said the girl.
+  </p>
+<p class="texto">
+
+If time is a relative factor, parents should pay attention to school performance, which usually plummets. "This is one of the first signs to appear. The child or teenager are dying of sleep, because spend the night on the computer or on the cell phone, "says Spritzer. Other symptoms are the loss of social interest - the person stops relating to others to dedicate himself to the virtual world - the family struggles and even changes in health. Sedentary lifestyle and weight gain are the most obvious problems.
+  </p>
+<p class="texto">
+Psychologist Aline Restano gives a hint to anyone who has doubts if the child is more involved with the technology than it should. "One of the risk factors for girls dependent on social networks is to spend a lot of time visualizing the profile of others without posting anything. Often, the father thinks that she does not abuse the nets because she does not put it, but just looking constantly is worse, "she says. The excess of jealousy triggered by actions such as tanned in the boyfriend's photo is another strong indication that that person's relationship with technology has crossed the boundaries of healthy.
+  </p>
+<p class="texto">
+<b>Differences</b> 
+  </p>
+<p class="texto">
+
+Girls and boys have different dependency profiles. They are more interested in online gaming. "With the avatars, they take on other skills that they do not have in real life," explains Veruska Santos of the group Delete. Forty-five percent of patients aged 9 to 17 attended by the Institute of Psychiatry at UFRJ are networking with others. Girls, on the other hand, dedicate themselves more to social networks. In the latter case, the psychologist Aline Restano points out another warning sign: constantly looking at the cell phone, which may be even worse than spending a lot of time connected. "Sometimes, there is no time to update and they are already checking again," he says. For these girls, tanned numbers, friendship requests, positive comments and message notifications are just like the fuel that fuels addiction.
+  </p>
+<p class="texto">
+In the Delete project, Veruska Santos says that therapists are getting good results. "Behaviors to control compulsive use begin to be strengthened. It's not stopping use, but doing it differently, "he says. Time management work and the development of social skills are also stimulated. But for treatment to be successful, family involvement is critical.
+  </p>
+<p class="texto">
+"Sometimes parents themselves encourage children to become technology dependent. Giving them a computer to stay busy all day is more comfortable, "he criticizes.
+  </p>
+<p class="texto">
+<b>Conscious Use</b>
+  </p>
+<p class="texto">
+See 10 steps to use the web and electronics
+according to experts from UFRJ
+  </p>
+<p class="texto">
+
+1 - Good sense so that the use does not become abusive in the daily life.
+  </p>
+<p class="texto">
+
+2 - Be aware of the physical consequences (such as sleep deprivation, back pain and vision problems) and psychological (such as depression, anxiety, and anxiety) due to overuse.
+  </p>
+<p class="texto">
+
+3 - Dose the practice of using technologies in everyday life. Make sure your academic or work performance is being impaired.
+  </p>
+<p class="texto">
+
+4 - Reflect on your daily habits and do different.
+  </p>
+<p class="texto">
+
+5 - Do not switch outdoor activities to stay connected.
+  </p>
+<p class="texto">
+
+6 - Choose a real social life to the virtual, choosing relationships / real friendships instead of virtual ones.
+  </p>
+<p class="texto">
+
+7 - Exercise regularly and take regular breaks while using the technologies.
+  </p>
+<p class="texto">
+
+8 - Do not shake your mood with virtual publications and do not believe everything that is posted.
+  </p>
+<p class="texto">
+
+9 - Cherish your family relationships.
+  </p>
+<p class="texto">
+
+10 - Think about the environment, recycle appliances and avoid frequent switching unnecessarily.
+  </p>
+<p class="texto">
+
+<b>Take into account that ...</b>
+  </p>
+<p class="texto">
+
+» Virtual attitudes should be predicted and reflected
+  </p>
+<p class="texto">
+
+» The boundary between public and private is very subtle
+  </p>
+<p class="texto">
+
+» What is posted can be considered a fired arrow
+  </p>
+<p class="texto">
+
+» It is important to differentiate the normal use of pathological
+  </p>
+<p class="texto">
+
+» Life becomes headline in social networks
+  </p>
+<p class="texto">
+
+<b>Source:</b> Group Delete
+  </p>
+  </p>
+  <center><button type="button" class="btn btn-success btnplus" id="escolha" onclick="exibe('experiencia'); esconder('esconder')">HIDE</button></center>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<center><h1>Vídeos</h1></center>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/gGYD7f6ImAw" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/BPiF9Nf0e9Q" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+</div>
+<div id="botao" style="display:inline">
+   <center>
+<button type="button" class="btn btn-success btnplus" id="escolha" onclick="exibe('videos'); esconder('botao')">MORE</button></center>
+</div>
+  <div id="videos" style="display:none">
+<div class="spacer"></div>
+<div class="row">
+<div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/asrY8sj8G9k" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+<div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/hI_M_Dw5Qak" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="row">
+<div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/hDXZfspdLw8" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+<div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://www.youtube.com/embed/Rx_7xv1ah7g" width="640" height="360" frameborder="0" allowfullscreen="true">
+    </iframe>
+    </div>
+</div>
+</div>
+<center><button type="button" class="btn btn-success btnplus" id="escolha" onclick="exibe('videos'); esconder('botao')">LESS</button></center>
+</div>
+</div>
+
+<center><h1> Are you addicted to internet?</h1></center>
+</br>
+<p class="texto">Are you addicted to internet? Take the test and see your level of dependence
+Questionnaire with 20 questions was developed by the Instituto Delete.
+</p>
+<p class="texto">
+Is the internet an addiction for you? The Delete Institute Internet Dependency Test was the first valid and credible way of measuring reliance on Internet use. The test is a 20-question quiz that measures the low, moderate, and severe levels of dependency on the internet.</p>
+      <center><a href="quiz.html"><button type="button" class="btn btn-success stl">Do the test</button></a></center>
+      <div class="spacer"></div>
+</div>
+     <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+ <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== ""){
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<footer class="container-fluid bg-4 text-center" style="background-color: black;">
+  <p> <div class="container-fluid" id="contato">
+<div class="page-header2" style="background-color: #00A31B; color: #00A31B; border-bottom: 1px solid #00A31B">
+</div>
+<h3 class="title2"><b>SAÚDE NO ES</b></h3>
+<br/>
+<br/>
+ <div class="row">
+    <div class="col-sm-5">
+      <p class="contact"><span class="glyphicon glyphicon-map-marker logo"></span>IFES- Campus Serra</p>
+      <p class="contact"><span class="glyphicon glyphicon-envelope logo"></span> saudees@gmail.com</p>
+      <p class="contact"><span class="glyphicon glyphicon-phone logo"></span> Em breve</p>
+      <br/>
+    </div>
+    <div class="col-sm-7">
+    <a style="color: white" target="_blank" href="https://matheuskuster.github.io/" data-toggle="tooltip" title="Clique pra saber mais sobre mim"><h4>Matheus Kuster</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://sibelysmiderle.github.io/novo" data-toggle="tooltip"  title="Clique pra saber mais sobre mim"><h4>Sibely Alves</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://joaoantoniosc.github.io/" data-toggle="tooltip" title="Clique pra saber mais sobre mim"><h4>João Antônio Sobrinho</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://dudabraga.github.io/" data-toggle="tooltip"  title="Clique pra saber mais sobre mim"><h4>Maria Eduarda Braga</h4></a><br/>
+    <a style="color: white" target="_blank" href="#" data-toggle="tooltip" title="Clique pra saber mais sobre mim"><h4>Isaque Siqueira</h4></a><br/>
+    <a style="color: white" target="_blank" href="https://ingridylima2.github.io/pagina/index.html" data-toggle="tooltip"  title="Clique pra saber mais sobre mim"><h4>Ingridy Lima</h4></a>
+    </div>    
+      </div>
+    </div>
+    <br/>
+  <footer class="container-fluid text-center">
+    <a href="#home" title="Voltar ao Topo">
+    <span class="glyphicon glyphicon-chevron-up topo" style="color: #00A31B;"></span>
+  </a>
+  <center>2017 &copy; Todos os direitos reservados</center>
+  </footer>
+
+
+
+</body>
+</html>
+</body>
+</html>
