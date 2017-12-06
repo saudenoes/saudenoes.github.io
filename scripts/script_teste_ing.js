@@ -72,15 +72,15 @@ $(document).ready( function(){
     	$('.sua_pontuacao').html(soma);
     	var frase = '';
     	if(soma < 20){
-    		frase = 'Você não utiliza quase nada da tecnologia digital. Poderia se adaptar a esse novo mundo e usufruir mais de suas possibilidades.'
+    		frase = 'You do not use technologies that much. You could adapt yourself to this new world and enjoy the possibilities.'
     	} else {
     		if(soma <= 49){
-    			frase = 'Você é um utilizador médio. Por vezes poderá até navegar na Internet um pouco demais, no entanto, tem controle sobre a sua utilização.'
+    			frase = 'You are an average user. Sometimes you surf on the Internet a little longer, besides you have control about your use.'
     		} else {
     			if(soma <= 79){
-    				frase = 'Você começa a ter problemas ocasionais ou frequentes devido ao uso da Internet. Deve considerar o impacto na sua vida por ficar ligado à Internet com frequência.'
+    				frase = 'You start to have occasional or common problems because of Internet use it. You should consider the impact on yout life to stay connected to the Internet frequently.'
     			} else {
-    				frase = 'A utilização da Internet está causando problemas significativos na sua vida. Deve avaliar as consequências destes impactos e aprender a lidar com a internet de modo mais saudável e produtivo.'
+    				frase = 'The use of the Internet is causing significant problems to your life. You should assess the consequences of these impacts and learn how to deal whit the Internert on a healthy and productive way.'
     			}
     		}
     	}
